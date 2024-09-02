@@ -47,3 +47,7 @@ double blocky(double apple)
     return quantity;
 }
 ```
+
+In this example, the scope of **q** is limited to the inner block and only code within the block can access **q**.
+
+*Function scope*  applies just to labels used with **goto** statements. This means that even if a lable first appears inside an inner block in a function, its scope extends to the whole function. It would be confusing 
