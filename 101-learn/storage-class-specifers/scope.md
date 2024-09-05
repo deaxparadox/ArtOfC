@@ -51,3 +51,40 @@ double blocky(double apple)
 In this example, the scope of **q** is limited to the inner block and only code within the block can access **q**.
 
 *Function scope*  applies just to labels used with **goto** statements. This means that even if a lable first appears inside an inner block in a function, its scope extends to the whole function. It would be confusing 
+
+
+##### Function Prototype Scope
+
+*Function prototype scope* applies to variable names used in function prototypes, as in the following:
+
+```c
+int mighty(int mouse, double large);
+```
+
+Function prototype scope runs from the point the variable is defined to the end of the prototype declaration
+
+
+##### File Scope (Global variable)
+
+A variable with its definition placed outside of any function has *file scope*. A variable with file scope is visible from the point it is defined to the end of the file containing the definition. 
+
+Take a look at this example:
+
+```c
+#include <stdio.h>
+
+int units = 0;              // a variable with file scope
+void critic(void);
+
+int main(void) 
+{
+    ...
+}
+
+void critic(void)
+{
+    ...
+}
+```
+
+Here, the variable **units** has file scope, and it can be used in both **main()** and **critic()**. Because they canbe used in more than one function, file scope variables are also called **global variables**.

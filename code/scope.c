@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include "static_scope.h"
+
+
+
 
 double blocky(double apple)
 {
@@ -42,6 +46,7 @@ int function_goto_scope()
 
 
 int main() {
-    printf("Values: %d\n", function_goto_scope());
+    printf("%d\n", MAX_SCOPE_VALUE);
+    // printf("Values: %d\n", function_goto_scope());
     return 0;
 }
