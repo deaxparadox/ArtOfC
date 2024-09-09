@@ -7,11 +7,11 @@ void with_static(int number)
     printf("number: %d, total: %d\n", number, total);
 }
 
-// int no_static()
-// {
-//     printf("total: ", tota)
+int no_static()
+{
+    printf("total: ", tota)
 
-// }
+}
 
 int main()
 {
