@@ -1,5 +1,7 @@
 # Learn C
 
+- [A simple seven step program](102-simple-seven-step-program.md)
+
 
 - [Storage Class Specifiers](storage-class-specifers/README.md)
     - [Scopes](storage-class-specifers/scope.md)
